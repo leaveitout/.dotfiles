@@ -59,7 +59,7 @@ nnoremap <Space> <Nop>
 let mapleader = " "
 
 " Fast saving
-nmap <leader>w :w!<cr>
+noremap <leader>w :w!<cr>
 
 " Fast quit 
 noremap <Leader>q :quit<CR>  " Quit current window
@@ -70,6 +70,8 @@ noremap <Leader>Q :qa!<CR>   " Quit all windows
 " ideavimrc specific:
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""
+
+nnoremap <leader><leader> :action SearchEverywhere<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Navigation controls:
@@ -86,6 +88,7 @@ nnoremap <leader>gi :action GotoImplementation<CR>
 nnoremap <leader>gb :action GotoDeclaration<CR>
 nnoremap <leader>gB :action GotoTypeDeclaration<CR>
 nnoremap <leader>gt :action GotoTest<CR>
+nnoremap <leader>gr :action RecentFiles<CR>
 " Consistent mapping for split navigation.
 nnoremap <leader>gl <C-W>l
 nnoremap <leader>gh <C-W>h
