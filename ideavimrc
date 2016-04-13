@@ -1,0 +1,122 @@
+" Tab behaviour
+"set expandtab
+"set shiftwidth=2
+"set softtabstop=2
+
+" Global subsitition, i.e. replace all instances in line, not just first
+set gdefault           
+
+" Powerline setup
+set guifont=Hack\ 11
+
+" Always show statusline
+set laststatus=2
+
+" Map 0 to fist non blank character
+" noremap 0 ^
+" noremap ^ 0
+
+" Jump to beginning and end of lines easier. From http://vimbits.com/bits/16
+noremap H ^
+noremap L $
+
+" Quick escape route
+inoremap jk <Esc>
+inoremap kj <Esc>
+inoremap jK <Esc>
+inoremap kJ <Esc>
+inoremap Jk <Esc>
+inoremap Kj <Esc>
+inoremap JK <Esc>
+inoremap KJ <Esc>
+
+" Remap U to <C-r> for easier redo. http://vimbits.com/bits/356
+nnoremap U <C-r>
+
+" Use ; for : in normal and visual mode, less keystrokes
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
+
+" Cut, copy and paste from the system clipboard
+vnoremap <C-x> "+d
+vnoremap <C-c> "+y
+noremap <C-v> "+p
+
+" Searching
+set ignorecase " Case insensitive search
+set smartcase  " Non-case sensitive search
+set incsearch  " Incremental search
+
+" Easier indentation
+vnoremap < <gv  " better indentation
+vnoremap > >gv  " better indentation" Python-mode
+
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file.
+nnoremap <Space> <Nop>
+let mapleader = " "
+
+" Fast saving
+nmap <leader>w :w!<cr>
+
+" Fast quit 
+noremap <Leader>q :quit<CR>  " Quit current window
+noremap <Leader>Q :qa!<CR>   " Quit all windows
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" ideavimrc specific:
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Navigation controls:
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>ga :action GotoAction<CR>
+nnoremap <leader>gs :action GotoSymbol<CR>
+nnoremap <leader>gc :action GotoClass<CR>
+nnoremap <leader>gf :action GotoFile<CR>
+nnoremap <leader>ge :action GotoNextError<CR>
+nnoremap <leader>gE :action GotoPreviousError<CR>
+nnoremap <leader>gm :action MethodDown<CR>
+nnoremap <leader>gM :action MethodUp<CR>
+nnoremap <leader>gi :action GotoImplementation<CR>
+nnoremap <leader>gb :action GotoDeclaration<CR>
+nnoremap <leader>gB :action GotoTypeDeclaration<CR>
+nnoremap <leader>gt :action GotoTest<CR>
+" Consistent mapping for split navigation.
+nnoremap <leader>gl <C-W>l
+nnoremap <leader>gh <C-W>h
+nnoremap <leader>gj <C-W>j
+nnoremap <leader>gk <C-W>k
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tool Windows:
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>ts :action ActivateStructureToolWindow<CR>
+nnoremap <leader>te :action ActivateProjectToolWindow<CR>
+nnoremap <leader>tn :action ActivateNavBar<CR>
+nnoremap <leader>tc :action ActivateCMakeToolWindow<CR>
+nnoremap <leader>tt :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>tm :action ActivateMessagesToolWindow<CR>
+nnoremap <leader>tr :action ActivateRunToolWindow<CR>
+nnoremap <leader>td :action ActivateDebugWindow<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Run Commands:
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"ChooseDebugConfiguration                           <A-S-F9>
+"ChooseRunConfiguration                             <A-S-F10>
+"CreateRunConfiguration                            
+"editRunConfigurations                             
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Editing
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>cc :action CommentByLineComment<CR>
+"nnoremap <leader>cc :action CommentByLineComment<CR>
+"
