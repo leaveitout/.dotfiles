@@ -1,0 +1,6 @@
+[push]
+	default = simple
+[diff]
+        tool = meld
+[include]
+        path = ~/.gitconfig.local
