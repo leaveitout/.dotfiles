@@ -1,6 +1,8 @@
 - link:
     ~/.vimrc: vimrc
     ~/.ideavimrc: ideavimrc
+    ~/.gitconfig: gitconfig
+    ~/.gitconfig.local: gitconfig.local
     ~/.config/kglobalshortcutsrc: kde/kglobalshortcutsrc
 - shell:
   - git submodule update --init --recursive # Installing submodules
