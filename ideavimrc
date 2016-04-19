@@ -119,7 +119,7 @@ nnoremap <leader>tc :action ActivateCMakeToolWindow<CR>
 nnoremap <leader>tt :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>tm :action ActivateMessagesToolWindow<CR>
 nnoremap <leader>tr :action ActivateRunToolWindow<CR>
-nnoremap <leader>td :action ActivateDebugWindow<CR>
+nnoremap <leader>td :action ActivateDebugToolWindow<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -143,6 +143,8 @@ nnoremap <leader>rb :action ToggleLineBreakpoint<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Editing
 """""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>cc :action CommentByLineComment<CR>
+nnoremap <leader>cc :action CommentByLineComment<CR> :action VimMotionUp<CR> 
+vnoremap <leader>cc :action CommentGroup<CR>
+
 "nnoremap <leader>cc :action CommentByLineComment<CR>
 "

@@ -1,6 +1,9 @@
 [KDE Keyboard Layout Switcher]
+Switch keyboard layout to English (UK, Colemak)=none,none,Switch keyboard layout to English (UK\\, Colemak)
+Switch keyboard layout to English (UK, Dvorak with UK punctuation)=none,none,Switch keyboard layout to English (UK\\, Dvorak with UK punctuation)
+Switch keyboard layout to Irish (UnicodeExpert)=none,none,Switch keyboard layout to Irish (UnicodeExpert)
 Switch to Next Keyboard Layout=none,none,Switch to Next Keyboard Layout
-_k_friendly_name=KDE Daemon
+_k_friendly_name=KDE Control Module
 
 [amarok]
 _k_friendly_name=amarok
