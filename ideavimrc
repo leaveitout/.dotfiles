@@ -50,12 +50,12 @@ set smartcase  " Non-case sensitive search
 set incsearch  " Incremental search
 
 " Easier indentation
-vnoremap < <gv  " better indentation
-vnoremap > >gv  " better indentation" Python-mode
+vnoremap < <gv  
+vnoremap > >gv
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file.
-nnoremap <Space> <Nop>
+noremap <Space> <Nop>
 let mapleader = " "
 
 " Fast saving
@@ -101,7 +101,12 @@ nnoremap <leader>gt :action GotoTest<CR>
 nnoremap <leader>gr :action RecentFiles<CR>
 nnoremap <leader>go :action Back<CR>
 nnoremap <leader>gi :action Forward<CR>
+noremap <leader>gx :action CloseActiveTab<CR>
+noremap <leader>gu <C-u>
+noremap <leader>gd <C-d>
 
+noremap <leader>fu :action FindUsages<CR>
+noremap <leader>fU :action FindUsagesInFile<CR>
 " Consistent mapping for split navigation.
 nnoremap <leader>gl <C-W>l
 nnoremap <leader>gh <C-W>h
@@ -112,21 +117,24 @@ nnoremap <leader>gk <C-W>k
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Tool Windows:
 """""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>ts :action ActivateStructureToolWindow<CR>
-nnoremap <leader>te :action ActivateProjectToolWindow<CR>
-nnoremap <leader>tn :action ActivateNavBar<CR>
-nnoremap <leader>tc :action ActivateCMakeToolWindow<CR>
-nnoremap <leader>tt :action ActivateTerminalToolWindow<CR>
-nnoremap <leader>tm :action ActivateMessagesToolWindow<CR>
-nnoremap <leader>tr :action ActivateRunToolWindow<CR>
-nnoremap <leader>td :action ActivateDebugToolWindow<CR>
+noremap <leader>ts :action ActivateStructureToolWindow<CR>
+noremap <leader>te :action ActivateProjectToolWindow<CR>
+noremap <leader>tn :action ActivateNavBar<CR>
+noremap <leader>tc :action ActivateCMakeToolWindow<CR>
+noremap <leader>tb :action ActivateTerminalToolWindow<CR>
+noremap <leader>tm :action ActivateMessagesToolWindow<CR>
+noremap <leader>tr :action ActivateRunToolWindow<CR>
+noremap <leader>td :action ActivateDebugToolWindow<CR>
+noremap <leader>tt :action HideAllWindows<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc:
 """""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>d :action QuickJavaDoc<CR>
-nnoremap <leader>D :action QuickImplementations<CR>
+noremap <leader>d :action QuickJavaDoc<CR>
+noremap <leader>D :action QuickImplementations<CR>
+noremap <leader>el :action EditorToggleShowLineNumbers<CR>
+noremap <leader><F11> :action ToggleFullScreen<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -136,15 +144,19 @@ nnoremap <leader>D :action QuickImplementations<CR>
 "ChooseRunConfiguration                             <A-S-F10>
 "CreateRunConfiguration                            
 "editRunConfigurations                             
-nnoremap <leader>rr :action Run<CR>
-nnoremap <leader>rd :action Debug<CR>
-nnoremap <leader>rb :action ToggleLineBreakpoint<CR>
+noremap <leader>rr :action Run<CR>
+noremap <leader>rd :action Debug<CR>
+noremap <leader>rc :action Clean<CR>
+noremap <leader>rm :action Build<CR>
+noremap <leader>rb :action ToggleLineBreakpoint<CR>
+noremap <leader>re :action editRunConfigurations<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Editing
 """""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>cc :action CommentByLineComment<CR> :action VimMotionUp<CR> 
 vnoremap <leader>cc :action CommentGroup<CR>
+noremap <leader>cr :action ReformatCode<CR>
 
 "nnoremap <leader>cc :action CommentByLineComment<CR>
 "
