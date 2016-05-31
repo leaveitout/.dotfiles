@@ -3,7 +3,7 @@ Switch keyboard layout to English (UK, Colemak)=none,none,Switch keyboard layout
 Switch keyboard layout to English (UK, Dvorak with UK punctuation)=none,none,Switch keyboard layout to English (UK\\, Dvorak with UK punctuation)
 Switch keyboard layout to Irish (UnicodeExpert)=none,none,Switch keyboard layout to Irish (UnicodeExpert)
 Switch to Next Keyboard Layout=none,none,Switch to Next Keyboard Layout
-_k_friendly_name=KDE Control Module
+_k_friendly_name=KDE Daemon
 
 [amarok]
 _k_friendly_name=amarok
@@ -42,9 +42,9 @@ Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On an
 _k_friendly_name=kaccess
 
 [kcm_touchpad]
-Disable Touchpad=,none,Disable Touchpad
-Enable Touchpad=none,none,Enable Touchpad
-Toggle Touchpad=none,none,Toggle Touchpad
+Disable Touchpad=,Touchpad Off,Disable Touchpad
+Enable Touchpad=none,Touchpad On,Enable Touchpad
+Toggle Touchpad=none,Touchpad Toggle,Toggle Touchpad
 _k_friendly_name=kcm_touchpad
 
 [kded5]
@@ -55,7 +55,7 @@ Increase Keyboard Brightness=Keyboard Brightness Up,Keyboard Brightness Up,Incre
 Increase Screen Brightness=Monitor Brightness Up,Monitor Brightness Up,Increase Screen Brightness
 PowerOff=Power Off,Power Off,Power Off
 Show System Activity=Ctrl+Esc,Ctrl+Esc,Show System Activity
-Sleep=Sleep,Sleep,Sleep
+Sleep=Sleep,Sleep,Suspend
 Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,Toggle Keyboard Backlight
 _k_friendly_name=KDE Daemon
 display=Display,Display,Switch Display
@@ -64,7 +64,10 @@ display=Display,Display,Switch Display
 _k_friendly_name=KDE Daemon
 {5441819b-b500-4946-94f6-4db927625357}=Meta+G,none,Google
 {743a5471-8d02-42c9-9fde-e7d5ba38dd82}=Print,none,PrintScreen
+{91d77655-6b21-426a-a704-6d0d7ef5470b}=,none,Start Screenshot Tool
+{a1f4c2a7-c94e-4d2f-a1d5-58155ff84ae7}=Meta+Print,none,Take Active Window Screenshot
 {a89a968f-62ee-458e-801b-ffdc8008b918}=Meta+E,none,Dolphin
+{a9106acc-95f3-4c73-924b-38015bf75f55}=Shift+Print,none,Take Full Screen Screenshot
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
 {d239e89f-6ed7-4c7f-98ee-aa6109ae31ad}=Meta+T,none,Konsole
 {f4dd55f0-fa04-457d-91f2-de0dacfd5542}=Launch (1),none,KCalc
@@ -77,12 +80,12 @@ mute=Volume Mute,Volume Mute,Mute
 
 [krunner]
 _k_friendly_name=krunner
-run command=Alt+Space\tAlt+F2\tSearch,Alt+Space,Run Command
+run command=Alt+Space\tShift+Space\tSearch,Alt+Space,Run Command
 run command on clipboard contents=Alt+Shift+F2,Alt+Shift+F2,Run Command on clipboard contents
 
 [ksmserver]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,none,Halt Without Confirmation
-Lock Session=Alt+\\,\tScreensaver,Ctrl+Alt+L\tScreensaver,Lock Session
+Lock Session=Meta+\\\\\tScreensaver,Ctrl+Alt+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,none,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
@@ -258,7 +261,7 @@ manage activities=Meta+Q,Meta+Q,Activities...
 next activity=Meta+Tab,none,Walk through activities
 previous activity=Meta+Shift+Tab,none,Walk through activities (Reverse)
 repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
-show dashboard=Ctrl+F12,Ctrl+F12,Show Dashboard
+show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop
 show-barcode=none,none,Show Barcode...
 show-on-mouse-pos=none,none,Open Klipper at Mouse Position
 stop current activity=Meta+S,Meta+S,Stop Current Activity
