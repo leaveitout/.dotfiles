@@ -177,15 +177,25 @@ filetype plugin indent on    " required
 
 " Setting up solarized color scheme
 if has('gui_running')
-	syntax enable
-	set background=dark
-	colorscheme solarized
+	"syntax enable
+	"set background=dark
+	"colorscheme solarized
         "set noantialias
+        syntax enable
+        set background=dark
+        colorscheme base16-tomorrow
 else
-	syntax enable
-	set background=dark
-	set t_Co=256
-	colorscheme solarized
+        " To use solarized, uncomment the following 4 lines
+        "syntax enable
+        "set background=dark
+        "set t_Co=256
+        "colorscheme solarized
+        syntax enable
+        set background=dark
+        "set t_Co=256
+        "let base16colorspace=256
+        "colorscheme base16-tomorrow
+        colorscheme Tomorrow-Night
 endif
 
 " Map F2 to NERDTree toggle
