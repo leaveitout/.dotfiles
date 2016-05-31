@@ -1,6 +1,10 @@
 [push]
-	default = simple
+  default = simple
 [diff]
-        tool = meld
+  tool = gvimdiff
+[difftool]
+  prompt = false
 [include]
-        path = ~/.gitconfig.local
+  path = ~/.gitconfig.local
+[url "https://"]
+	insteadOf = git://
