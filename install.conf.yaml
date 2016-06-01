@@ -4,5 +4,6 @@
     ~/.gitconfig: gitconfig
     ~/.gitconfig.local: gitconfig.local
     ~/.config/kglobalshortcutsrc: kde/kglobalshortcutsrc
+    ~/.config/omf: omf
 - shell:
   - git submodule update --init --recursive # Installing submodules
