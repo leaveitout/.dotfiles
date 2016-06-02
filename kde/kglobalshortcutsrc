@@ -45,7 +45,7 @@ _k_friendly_name=kaccess
 Disable Touchpad=,Touchpad Off,Disable Touchpad
 Enable Touchpad=none,Touchpad On,Enable Touchpad
 Toggle Touchpad=none,Touchpad Toggle,Toggle Touchpad
-_k_friendly_name=kcm_touchpad
+_k_friendly_name=KDE Daemon
 
 [kded5]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
