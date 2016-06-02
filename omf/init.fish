@@ -31,7 +31,36 @@ set fish_greeting ""
 set -x EDITOR vim
 
 function e
-  gvim $argv
+  vim $argv
+end
+
+# Git aliases
+function gst
+  git status $argv
+end
+
+function gdf
+  git diff $argv
+end
+
+function gdt
+  git difftool $argv
+end
+
+function gps
+  git push $argv
+end
+
+function gpl
+  git pull $argv
+end
+
+function gad
+  git add $argv
+end
+
+function gcm
+  git commit $argv
 end
 
 # Base16 Shell
