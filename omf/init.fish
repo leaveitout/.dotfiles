@@ -13,25 +13,58 @@ if not set -q LS_COLORS
   end
 end
 
-# Enable autojump command
-#source /usr/share/autojump/autojump.fish ^/dev/null
-#if test -e /usr/share/autojump/autojump.fish
-#source /usr/share/autojump/autojump.fish
-#end
-
-set -gx BD_OPT 'insensitive'
-alias b "bd"
-
 # Force 256 colors
 set -x TERM xterm-256color
 
 # No greeting
 set fish_greeting ""
 
+# vim settings and aliases
 set -x EDITOR vim
 
 function e
   vim $argv
+end
+
+# ls aliases
+function l
+  ll $argv
+end
+
+# bd settings and aliases
+set -gx BD_OPT 'insensitive'
+
+function b
+  bd $argv
+end
+
+function bb
+  cd ../..
+end
+
+function bbb
+  cd ../../..
+end
+
+function bbbb
+  cd ../../../..
+end
+
+function bbbbb
+  cd ../../../../..
+end
+
+# tree aliases
+function tr
+  tree $argv
+end
+
+function tra
+  tree -a $argv
+end
+
+function trd
+  tree -d $argv
 end
 
 # Git aliases
