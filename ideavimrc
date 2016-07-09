@@ -102,10 +102,11 @@ nnoremap <leader>gM :action MethodUp<CR>
 nnoremap <leader>gv :action VcsShowNextChangeMarker<CR>
 nnoremap <leader>gV :action VcsShowPrevChangeMarker<CR>
 nnoremap <leader>gi :action GotoImplementation<CR>
+nnoremap <leader>gr :action GotoRelated<CR>
 nnoremap <leader>gb :action GotoDeclaration<CR>
 nnoremap <leader>gB :action GotoTypeDeclaration<CR>
 nnoremap <leader>gt :action GotoTest<CR>
-nnoremap <leader>gr :action RecentFiles<CR>
+nnoremap <leader>gp :action RecentFiles<CR>
 nnoremap <leader>go :action Back<CR>
 nnoremap <leader>gi :action Forward<CR>
 noremap <leader>gx :action CloseActiveTab<CR>
