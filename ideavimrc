@@ -67,6 +67,13 @@ noremap <leader>w :w!<cr>
 nnoremap <Leader>q :action CloseContent<CR>
 nnoremap <Leader>Q :action ReopenClosedTab<CR>
 
+" Faster register access
+" TODO: Add to vimrc
+noremap <Leader>h "
+noremap <Leader>hs "+
+noremap <Leader>hy "0
+noremap <Leader>hd "-
+noremap <Leader>hf "/
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""
