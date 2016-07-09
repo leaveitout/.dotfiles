@@ -7,4 +7,6 @@
 [include]
   path = ~/.gitconfig.local
 [url "https://"]
-	insteadOf = git://
+  insteadOf = git://
+[credential]
+  helper = cache --timeout=3600
