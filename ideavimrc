@@ -49,6 +49,9 @@ set ignorecase " Case insensitive search
 set smartcase  " Non-case sensitive search
 set incsearch  " Incremental search
 
+"set number            " Display line numbers
+"set relativenumber    " Display relative line numbers
+
 " Easier indentation
 vnoremap < <gv  
 vnoremap > >gv
