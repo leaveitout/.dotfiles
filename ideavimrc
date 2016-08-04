@@ -173,7 +173,7 @@ noremap <leader>tt :action HideAllWindows<CR>
 " Misc:
 """""""""""""""""""""""""""""""""""""""""""""""""""
 noremap <leader>d :action QuickJavaDoc<CR>
-noremap <leader>D :action QuickImplementations<CR>
+nnoremap <leader>D :action QuickImplementations<CR>
 noremap <leader>el :action EditorToggleShowLineNumbers<CR>
 noremap <leader><F11> :action ToggleFullScreen<CR>
 
