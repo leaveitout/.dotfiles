@@ -58,7 +58,7 @@ vnoremap > >gv
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file.
-noremap <Space> <Nop>
+"noremap <Space> <Nop>
 let mapleader = " "
 
 " Fast saving
