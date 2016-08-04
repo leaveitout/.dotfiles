@@ -96,6 +96,10 @@ function gcm
   git commit $argv
 end
 
+function fin
+  find -iname "*$argv*"
+end
+
 # Base16 Shell
 eval sh /home/sean/Documents/libraries/base16-shell/base16-tomorrow.dark.sh
 
