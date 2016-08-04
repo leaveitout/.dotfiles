@@ -30,7 +30,7 @@ stop_after_current=Meta+Shift+V,Meta+Shift+V,Stop after current Track
 toggleMainWindow=none,none,Toggle Main Window
 
 [jovie]
-_k_friendly_name=jovie
+_k_friendly_name=Jovie
 pause=none,none,Pause
 repeat=none,none,Repeat
 resume=none,none,Resume
@@ -61,7 +61,7 @@ _k_friendly_name=KDE Daemon
 display=Display,Display,Switch Display
 
 [khotkeys]
-_k_friendly_name=System Settings
+_k_friendly_name=KDE Daemon
 {5441819b-b500-4946-94f6-4db927625357}=Meta+G,none,Google
 {743a5471-8d02-42c9-9fde-e7d5ba38dd82}=Print,none,PrintScreen
 {91d77655-6b21-426a-a704-6d0d7ef5470b}=,none,Start Screenshot Tool
@@ -236,22 +236,22 @@ Window to Screen 4=none,none,Window to Screen 4
 Window to Screen 5=none,none,Window to Screen 5
 Window to Screen 6=none,none,Window to Screen 6
 Window to Screen 7=none,none,Window to Screen 7
-_k_friendly_name=System Settings
+_k_friendly_name=KWin
 view_actual_size=Meta+0,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
-_k_friendly_name=Media Controller
+_k_friendly_name=mediacontrol
 nextmedia=Media Next,Media Next,Media playback next
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
 
 [plasmashell]
-_k_friendly_name=Activity switching
+_k_friendly_name=Plasma
 activate widget 48=none,none,Activate Icons-only Task Manager Widget
-activate widget 55=Alt+F1,none,Activate Application Launcher Widget
+activate widget 55=Meta+Z,none,Activate Application Launcher Widget
 clear-history=none,none,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
