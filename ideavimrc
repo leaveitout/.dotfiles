@@ -138,8 +138,10 @@ nnoremap <leader>gb :action GotoDeclaration<CR>
 nnoremap <leader>gB :action GotoTypeDeclaration<CR>
 nnoremap <leader>gt :action GotoTest<CR>
 nnoremap <leader>gp :action RecentFiles<CR>
-nnoremap <leader>go :action Back<CR>
-nnoremap <leader>gi :action Forward<CR>
+"nnoremap <leader>go :action Back<CR>
+"nnoremap <leader>gi :action Forward<CR>
+nnoremap <leader>go <C-o>
+nnoremap <leader>gi <C-i>
 noremap <leader>gx :action CloseActiveTab<CR>
 noremap <leader>gu <C-u>
 noremap <leader>gd <C-d>
