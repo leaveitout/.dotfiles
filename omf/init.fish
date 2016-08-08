@@ -96,8 +96,20 @@ function gcm
   git commit $argv
 end
 
+# Find in name (ignore case)
 function fin
   find -iname "*$argv*"
+end
+
+# Find in filetype (ignore case)
+function fit
+  find -iname "*.$argv"
+end
+
+
+# Find directory in current directory with pattern
+function fid
+  find -maxdepth 1 -iname "*$argv*" -type d 
 end
 
 # Base16 Shell
