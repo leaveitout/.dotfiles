@@ -112,6 +112,17 @@ function fid
   find -maxdepth 1 -iname "*$argv*" -type d 
 end
 
+function gig
+  curl -L -s https://www.gitignore.io/api/$argv > .gitignore
+  echo ".gitignore file created:"
+  cat .gitignore
+end
+
+# TODO: Change this to one gig command
+function gigls
+  curl -L -s https://www.gitignore.io/api/list
+end
+
 # Base16 Shell
 eval sh /home/sean/Documents/libraries/base16-shell/base16-tomorrow.dark.sh
 
