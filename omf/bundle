@@ -1,3 +1,4 @@
+package gi
 package https://github.com/0rax/fish-bd
 theme bobthefish
 theme default

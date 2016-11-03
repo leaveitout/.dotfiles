@@ -31,6 +31,10 @@ function l
   ll $argv
 end
 
+function d
+  ll $argv
+end
+
 # bd settings and aliases
 set -gx BD_OPT 'insensitive'
 

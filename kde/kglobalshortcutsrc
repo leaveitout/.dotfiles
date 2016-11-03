@@ -1,6 +1,7 @@
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to English (UK, Colemak)=none,none,Switch keyboard layout to English (UK\\, Colemak)
 Switch keyboard layout to English (UK, Dvorak with UK punctuation)=none,none,Switch keyboard layout to English (UK\\, Dvorak with UK punctuation)
+Switch keyboard layout to EurKEY (US based layout with European letters)=none,none,Switch keyboard layout to EurKEY (US based layout with European letters)
 Switch keyboard layout to EurKEY (US based layout with european letters)=none,none,Switch keyboard layout to EurKEY (US based layout with european letters)
 Switch keyboard layout to Irish (UnicodeExpert)=none,none,Switch keyboard layout to Irish (UnicodeExpert)
 Switch to Next Keyboard Layout=none,none,Switch to Next Keyboard Layout
@@ -252,6 +253,7 @@ stopmedia=Media Stop,Media Stop,Stop media playback
 [plasmashell]
 _k_friendly_name=Plasma
 activate widget 48=none,none,Activate Icons-only Task Manager Widget
+activate widget 55=Meta+Z,none,Activate Application Launcher Widget
 clear-history=none,none,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
