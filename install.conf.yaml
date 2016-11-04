@@ -12,5 +12,8 @@
     ~/.config/omf:
       force: true
       path: omf
+    ~/.vim/colors/Tomorrow-Night.vim:
+      create: true
+      path: Tomorrow-Night.vim
 - shell:
   - git submodule update --init --recursive # Installing submodules
