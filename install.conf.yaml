@@ -3,7 +3,17 @@
     ~/.ideavimrc: ideavimrc
     ~/.gitconfig: gitconfig
     ~/.gitconfig.local: gitconfig.local
-    ~/.config/kglobalshortcutsrc: kde/kglobalshortcutsrc
-    ~/.config/omf: omf
+    ~/.vim/bundle/Vundle.vim: 
+      create: true
+      path: Vundle.vim
+    ~/.config/kglobalshortcutsrc: 
+      force: true
+      path: kde/kglobalshortcutsrc
+    ~/.config/omf:
+      force: true
+      path: omf
+    ~/.vim/colors/Tomorrow-Night.vim:
+      create: true
+      path: Tomorrow-Night.vim
 - shell:
   - git submodule update --init --recursive # Installing submodules
