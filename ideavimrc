@@ -132,7 +132,7 @@ nnoremap <leader>gP :action GotoSuperMethod<CR>
 nnoremap <leader>gz :action TypeHierarchy<CR>
 nnoremap <leader>gv :action VcsShowNextChangeMarker<CR>
 nnoremap <leader>gV :action VcsShowPrevChangeMarker<CR>
-nnoremap <leader>gi :action GotoImplementation<CR>
+nnoremap <leader>gw :action GotoImplementation<CR>
 nnoremap <leader>gr :action GotoRelated<CR>
 nnoremap <leader>gb :action GotoDeclaration<CR>
 nnoremap <leader>gB :action GotoTypeDeclaration<CR>
