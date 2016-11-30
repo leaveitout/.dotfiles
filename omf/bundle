@@ -1,5 +1,6 @@
 package gi
 package https://github.com/0rax/fish-bd
 theme bobthefish
+theme cmorrell
 theme default
 theme robbyrussell
