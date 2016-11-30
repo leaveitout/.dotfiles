@@ -1,11 +1,13 @@
 [KDE Keyboard Layout Switcher]
+Switch keyboard layout to English (Programmer Dvorak)=none,none,Switch keyboard layout to English (Programmer Dvorak)
 Switch keyboard layout to English (UK, Colemak)=none,none,Switch keyboard layout to English (UK\\, Colemak)
 Switch keyboard layout to English (UK, Dvorak with UK punctuation)=none,none,Switch keyboard layout to English (UK\\, Dvorak with UK punctuation)
 Switch keyboard layout to EurKEY (US based layout with European letters)=none,none,Switch keyboard layout to EurKEY (US based layout with European letters)
 Switch keyboard layout to EurKEY (US based layout with european letters)=none,none,Switch keyboard layout to EurKEY (US based layout with european letters)
+Switch keyboard layout to Irish=none,none,Switch keyboard layout to Irish
 Switch keyboard layout to Irish (UnicodeExpert)=none,none,Switch keyboard layout to Irish (UnicodeExpert)
 Switch to Next Keyboard Layout=none,none,Switch to Next Keyboard Layout
-_k_friendly_name=KDE Daemon
+_k_friendly_name=System Settings Module
 
 [amarok]
 _k_friendly_name=amarok
@@ -59,29 +61,32 @@ PowerOff=Power Off,Power Off,Power Off
 Show System Activity=Ctrl+Esc,Ctrl+Esc,Show System Activity
 Sleep=Sleep,Sleep,Suspend
 Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,Toggle Keyboard Backlight
-_k_friendly_name=KDE Daemon
-display=Display,Display,Switch Display
+_k_friendly_name=Power Management
+display=Display,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=KDE Daemon
-{5441819b-b500-4946-94f6-4db927625357}=Meta+G,none,Google
-{743a5471-8d02-42c9-9fde-e7d5ba38dd82}=Print,none,PrintScreen
-{91d77655-6b21-426a-a704-6d0d7ef5470b}=,none,Start Screenshot Tool
-{a1f4c2a7-c94e-4d2f-a1d5-58155ff84ae7}=Meta+Print,none,Take Active Window Screenshot
-{a89a968f-62ee-458e-801b-ffdc8008b918}=Meta+E,none,Dolphin
-{a9106acc-95f3-4c73-924b-38015bf75f55}=Shift+Print,none,Take Full Screen Screenshot
+_k_friendly_name=System Settings Module
+{03c4a126-782b-4878-bea1-e34314d5a646}=,none,Take Active Window Screenshot
+{26fe1a06-8d6f-42be-b625-ee7a46a03569}=Meta+Shift+Print,none,Take Rectangular Region Screenshot
+{85a10e8d-4794-4f54-9e1d-c18af36a932e}=Meta+G,none,New Action
+{8775c6c9-7119-4c96-8349-f7aa2fad8fb8}=,none,Take Full Screen Screenshot
+{b2269b33-e962-4cdd-9ba1-16490341c649}=,none,Start Screenshot Tool
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
-{d239e89f-6ed7-4c7f-98ee-aa6109ae31ad}=Meta+T,none,Konsole
-{f4dd55f0-fa04-457d-91f2-de0dacfd5542}=Launch (1),none,KCalc
+{e951f730-b6d6-4d4c-9d27-37390e21fa75}=Meta+E,none,New Action
+{f6c702df-5394-40c7-93c7-b6c6df7a00a9}=Launch (1),none,New Action
+{fc1e19ea-5bfa-457d-a124-623e261ce90b}=Meta+T,none,Run Konsole
 
 [kmix]
 _k_friendly_name=Audio Volume
+decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,Decrease Microphone Volume
 decrease_volume=Volume Down,Volume Down,Decrease Volume
+increase_microphone_volume=Microphone Volume Up,Microphone Volume Up,Increase Microphone Volume
 increase_volume=Volume Up,Volume Up,Increase Volume
+mic_mute=Microphone Mute,Microphone Mute,Mute Microphone
 mute=Volume Mute,Volume Mute,Mute
 
 [krunner]
-_k_friendly_name=krunner
+_k_friendly_name=Run Command
 run command=Alt+Space\tShift+Space\tSearch,Alt+Space,Run Command
 run command on clipboard contents=Alt+Shift+F2,Alt+Shift+F2,Run Command on clipboard contents
 
@@ -91,7 +96,7 @@ Lock Session=Meta+\\\\\tScreensaver,Ctrl+Alt+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,none,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
-_k_friendly_name=ksmserver
+_k_friendly_name=System Settings
 
 [kwin]
 Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Activate Window Demanding Attention
@@ -102,9 +107,9 @@ ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)
 FlipSwitchAll=none,none,Toggle Flip Switch (All desktops)
 FlipSwitchCurrent=none,none,Toggle Flip Switch (Current desktop)
 Increase Opacity=none,none,Increase Opacity of Active Window by 5 %
-Invert Screen Colors=none,none,Invert Screen Colours
+Invert Screen Colors=none,none,Invert Screen Colors
 Kill Window=Ctrl+Alt+Esc,Ctrl+Alt+Esc,Kill Window
-MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Centre
+MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center
 MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
 MoveZoomDown=,Meta+Down,Move Zoomed Area Downwards
 MoveZoomLeft=,Meta+Left,Move Zoomed Area to Left
@@ -177,10 +182,10 @@ Window Fullscreen=Meta+F11,none,Make Window Fullscreen
 Window Grow Horizontal=none,none,Pack Grow Window Horizontally
 Window Grow Vertical=none,none,Pack Grow Window Vertically
 Window Lower=none,none,Lower Window
-Window Maximize=Meta+Return,none,Maximise Window
-Window Maximize Horizontal=none,none,Maximise Window Horizontally
-Window Maximize Vertical=none,none,Maximise Window Vertically
-Window Minimize=Meta+Backspace,none,Minimise Window
+Window Maximize=Meta+Return,none,Maximize Window
+Window Maximize Horizontal=none,none,Maximize Window Horizontally
+Window Maximize Vertical=none,none,Maximize Window Vertically
+Window Minimize=Meta+Backspace,none,Minimize Window
 Window Move=none,none,Move Window
 Window No Border=none,none,Hide Window Border
 Window On All Desktops=none,none,Keep Window on All Desktops
@@ -238,20 +243,21 @@ Window to Screen 4=none,none,Window to Screen 4
 Window to Screen 5=none,none,Window to Screen 5
 Window to Screen 6=none,none,Window to Screen 6
 Window to Screen 7=none,none,Window to Screen 7
-_k_friendly_name=KWin
+_k_friendly_name=System Settings
 view_actual_size=Meta+0,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
-_k_friendly_name=mediacontrol
+_k_friendly_name=Media Controller
 nextmedia=Media Next,Media Next,Media playback next
-playpausemedia=Media Play,Media Play,Play/Pause media playback
+playpausemedia=,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
 
 [plasmashell]
 _k_friendly_name=Plasma
+activate widget 4=Alt+F1,none,Activate Application Launcher Widget
 activate widget 48=none,none,Activate Icons-only Task Manager Widget
 activate widget 55=Meta+Z,none,Activate Application Launcher Widget
 clear-history=none,none,Clear Clipboard History
