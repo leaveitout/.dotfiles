@@ -7,7 +7,7 @@ Switch keyboard layout to EurKEY (US based layout with european letters)=none,no
 Switch keyboard layout to Irish=none,none,Switch keyboard layout to Irish
 Switch keyboard layout to Irish (UnicodeExpert)=none,none,Switch keyboard layout to Irish (UnicodeExpert)
 Switch to Next Keyboard Layout=none,none,Switch to Next Keyboard Layout
-_k_friendly_name=System Settings Module
+_k_friendly_name=KDE Daemon
 
 [amarok]
 _k_friendly_name=amarok
@@ -43,7 +43,7 @@ stop=none,none,Stop/Delete
 
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
-_k_friendly_name=kaccess
+_k_friendly_name=Accessibility
 
 [kcm_touchpad]
 Disable Touchpad=,Touchpad Off,Disable Touchpad
@@ -65,11 +65,12 @@ _k_friendly_name=Power Management
 display=Display,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=System Settings Module
+_k_friendly_name=KDE Daemon
 {03c4a126-782b-4878-bea1-e34314d5a646}=,none,Take Active Window Screenshot
 {26fe1a06-8d6f-42be-b625-ee7a46a03569}=Meta+Shift+Print,none,Take Rectangular Region Screenshot
 {85a10e8d-4794-4f54-9e1d-c18af36a932e}=Meta+G,none,New Action
 {8775c6c9-7119-4c96-8349-f7aa2fad8fb8}=,none,Take Full Screen Screenshot
+{8814004e-36a5-4b97-ba9b-b42d64a089a4}=Meta+Shift+Touchpad Toggle,none,Google
 {b2269b33-e962-4cdd-9ba1-16490341c649}=,none,Start Screenshot Tool
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
 {e951f730-b6d6-4d4c-9d27-37390e21fa75}=Meta+E,none,New Action
@@ -96,7 +97,7 @@ Lock Session=Meta+\\\\\tScreensaver,Ctrl+Alt+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,none,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
-_k_friendly_name=System Settings
+_k_friendly_name=ksmserver
 
 [kwin]
 Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Activate Window Demanding Attention
@@ -243,7 +244,7 @@ Window to Screen 4=none,none,Window to Screen 4
 Window to Screen 5=none,none,Window to Screen 5
 Window to Screen 6=none,none,Window to Screen 6
 Window to Screen 7=none,none,Window to Screen 7
-_k_friendly_name=System Settings
+_k_friendly_name=KWin
 view_actual_size=Meta+0,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
@@ -257,9 +258,20 @@ stopmedia=Media Stop,Media Stop,Stop media playback
 
 [plasmashell]
 _k_friendly_name=Plasma
+activate task manager entry 1=,Meta+1,Activate Task Manager Entry 1
+activate task manager entry 10=,Meta+0,Activate Task Manager Entry 10
+activate task manager entry 2=,Meta+2,Activate Task Manager Entry 2
+activate task manager entry 3=,Meta+3,Activate Task Manager Entry 3
+activate task manager entry 4=,Meta+4,Activate Task Manager Entry 4
+activate task manager entry 5=,Meta+5,Activate Task Manager Entry 5
+activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
+activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
+activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
+activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 4=Alt+F1,none,Activate Application Launcher Widget
 activate widget 48=none,none,Activate Icons-only Task Manager Widget
 activate widget 55=Meta+Z,none,Activate Application Launcher Widget
+activate widget 9=Meta+C,none,Activate Digital Clock Widget
 clear-history=none,none,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
