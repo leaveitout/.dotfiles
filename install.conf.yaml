@@ -15,5 +15,11 @@
     ~/.vim/colors/Tomorrow-Night.vim:
       create: true
       path: Tomorrow-Night.vim
+    ~/.jupyter/custom/custom.css:
+      create: true
+      path: jupyter/custom/custom.css
+    ~/.jupyter/custom/custom.js:
+      create: true
+      path: jupyter/custom/custom.js
 - shell:
   - git submodule update --init --recursive # Installing submodules
