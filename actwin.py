@@ -9,6 +9,7 @@ import subprocess
 
 
 def cmd_output_to_str_list(output):
+    # TODO: Sense checks
     output_str = str(output)
     output_list = output_str.split('\\n')
     # Remove the bytes marker from the first element
@@ -29,7 +30,6 @@ def get_current_desktop():
 
 def get_window_ids(name):
     cmd = 'xdotool search --class ' + name
-    # TODO: Get the return code if if has no valid windows
     try:
         output = subprocess.check_output(cmd, shell=True)
     except subprocess.CalledProcessError as e:
@@ -54,20 +54,27 @@ def find_window_id_on_current_desktop(window_ids, desktop_id):
             if int(window[0], 0) in window_ids:
                 return int(window[0], 0)
 
-    return 0
+    raise ValueError("No window on desktop matching search pattern")
 
 
 def activate_window(name):
-    curr_desktop = get_current_desktop()
-    window_ids = get_window_ids(name)
-    id = find_window_id_on_current_desktop(window_ids, curr_desktop)
-    # TODO: Use exceptions
-    if id != 0:
-        cmd = 'xdotool windowactivate ' + str(id)
-        subprocess.check_output(cmd, shell=True)
-        return 0
+    try:
+        window_ids = get_window_ids(name)
+    except ValueError as e:
+        print(e)
+        return 1
 
-    return 1
+    curr_desktop = get_current_desktop()
+
+    try:
+        id = find_window_id_on_current_desktop(window_ids, curr_desktop)
+    except ValueError as e:
+        print(e)
+        return 1
+
+    cmd = 'xdotool windowactivate ' + str(id)
+    subprocess.check_output(cmd, shell=True)
+    return 0
 
 
 if __name__ == '__main__':
