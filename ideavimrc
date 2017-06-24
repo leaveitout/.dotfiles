@@ -154,6 +154,9 @@ nnoremap <leader>gh <C-W>h
 nnoremap <leader>gj <C-W>j
 nnoremap <leader>gk <C-W>k
 
+nnoremap <C-h> gT
+nnoremap <C-l> gt
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Tool Windows:
@@ -175,7 +178,7 @@ noremap <leader>tt :action HideAllWindows<CR>
 noremap <leader>d :action QuickJavaDoc<CR>
 nnoremap <leader>D :action QuickImplementations<CR>
 noremap <leader>el :action EditorToggleShowLineNumbers<CR>
-noremap <leader><F11> :action ToggleFullScreen<CR>
+noremap <leader>fs :action ToggleFullScreen<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""

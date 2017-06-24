@@ -65,7 +65,10 @@ vnoremap > >gv  " better indentation" Python-mode
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file.
 nnoremap <Space> <Nop>
+let g:mapleader = " "
 let mapleader = " "
+let g:maplocalleader = " "
+let maplocalleader = " "
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -92,6 +95,17 @@ nnoremap <leader>gl <C-W>l
 nnoremap <leader>gh <C-W>h
 nnoremap <leader>gj <C-W>j
 nnoremap <leader>gk <C-W>k
+
+" Consistent mapping for tab navigation.
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
+nnoremap <C-H> :tabfirst<CR>
+nnoremap <C-L> :tablast<CR>
+inoremap <C-h> <Esc>:tabprevious<CR>i
+inoremap <C-l> <Esc>:tabnext<CR>i
+inoremap <C-H> <Esc>:tabfirst<CR>i
+inoremap <C-L> <Esc>:tablast<CR>i
+
 " More natural split opening
 set splitbelow
 set splitright
@@ -146,6 +160,8 @@ Plugin 'heavenshell/vim-pydocstring'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'lervag/vimtex'
 Plugin 'dag/vim-fish'
+Plugin 'Shougu/unite.vim'
+Plugin 'rafaqz/citation.vim'
 
 " All Plugins must be added before the following line
 call vundle#end()            " required
@@ -174,6 +190,8 @@ filetype plugin indent on    " required
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin specific options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"set spell spelllang=en_gb
+autocmd FileType plaintex,tex,latex setlocal spell spelllang=en_gb
 
 " Setting up solarized color scheme
 if has('gui_running')
@@ -183,7 +201,8 @@ if has('gui_running')
         "set noantialias
         syntax enable
         set background=dark
-        colorscheme base16-tomorrow
+        colorscheme Tomorrow-Night
+        "colorscheme base16-tomorrow
 else
         " To use solarized, uncomment the following 4 lines
         "syntax enable
@@ -266,3 +285,17 @@ noremap <F3> :Autoformat<CR><CR>
 
 " Latex-to-Unicode as you type in Julia
 let g:latex_to_unicode_auto = 1
+
+" citation.vim zotero citations
+let g:citation_vim_mode="zotero"
+let g:citation_vim_zotero_path="/home/sean/.zotero/zotero/vzf14b15.default/zotero/"
+
+let g:citation_vim_cache_path="/home/sean/.vim/your_cache_path"
+
+let g:citation_vim_outer_prefix="\cite{"
+let g:citation_vim_inner_prefix=""
+let g:citation_vim_suffix="}"
+
+let g:citation_vim_et_al_limit=2
+nnoremap <silent>[unite]c       :<C-u>Unite -buffer-name=citation -start-insert -default-action=append      citation/key<cr>
+
