@@ -179,6 +179,7 @@ noremap <leader>d :action QuickJavaDoc<CR>
 nnoremap <leader>D :action QuickImplementations<CR>
 noremap <leader>el :action EditorToggleShowLineNumbers<CR>
 noremap <leader>fs :action ToggleFullScreen<CR>
+noremap <leader>mv :action RenameElement<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -201,6 +202,5 @@ noremap <leader>re :action editRunConfigurations<CR>
 nnoremap <leader>cc :action CommentByLineComment<CR> :action VimMotionUp<CR> 
 vnoremap <leader>cc :action CommentGroup<CR>
 noremap <leader>cr :action ReformatCode<CR>
-
 "nnoremap <leader>cc :action CommentByLineComment<CR>
 "

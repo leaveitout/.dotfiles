@@ -21,5 +21,8 @@
     ~/.jupyter/custom/custom.js:
       create: true
       path: jupyter/custom/custom.js
+    ~/.local/share/jupyter/nbextensions/vim_binding/vim_binding.css:
+      create: true
+      path: jupyter/custom/vim_binding.css
 - shell:
   - git submodule update --init --recursive # Installing submodules

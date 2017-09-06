@@ -27,7 +27,7 @@ rate5=Meta+5,Meta+5,Rate Current Track: 5
 replay=none,none,Restart current track
 seek_backward_medium=Meta+Shift+-,Meta+Shift+-,Seek Backward by 10 seconds
 seek_forward_medium=Meta+Shift++,Meta+Shift++,Seek Forward by 10 seconds
-showNotificationPopup=Meta+O,Meta+O,Show Notification Popup
+showNotificationPopup=,Meta+O,Show Notification Popup
 skipTrack=,Meta+S,Last.fm: Skip Current Track
 stop=,Media Stop,Stop
 stop_after_current=Meta+Shift+V,Meta+Shift+V,Stop after current Track
@@ -68,6 +68,8 @@ display=Display,Display\tMeta+P,Switch Display
 _k_friendly_name=KDE Daemon
 {03c4a126-782b-4878-bea1-e34314d5a646}=,none,Take Active Window Screenshot
 {26fe1a06-8d6f-42be-b625-ee7a46a03569}=Meta+Shift+Print,none,Take Rectangular Region Screenshot
+{38b1e445-2f76-423d-8e99-7b0f783972bc}=Meta+O,none,Activate Konsole
+{4dfe21ab-d677-44d7-ac43-0b68864e35d8}=Meta+P,none,Activate Vivaldi
 {85a10e8d-4794-4f54-9e1d-c18af36a932e}=Meta+G,none,New Action
 {8775c6c9-7119-4c96-8349-f7aa2fad8fb8}=,none,Take Full Screen Screenshot
 {8814004e-36a5-4b97-ba9b-b42d64a089a4}=Meta+Shift+Touchpad Toggle,none,Google
@@ -75,6 +77,7 @@ _k_friendly_name=KDE Daemon
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
 {e951f730-b6d6-4d4c-9d27-37390e21fa75}=Meta+E,none,New Action
 {f6c702df-5394-40c7-93c7-b6c6df7a00a9}=Launch (1),none,New Action
+{f77b63f0-3633-40e5-bfaa-152ae1935489}=Meta+I,none,Activate IntelliJ
 {fc1e19ea-5bfa-457d-a124-623e261ce90b}=Meta+T,none,Run Konsole
 
 [kmix]
@@ -100,7 +103,7 @@ Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
 _k_friendly_name=ksmserver
 
 [kwin]
-Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Activate Window Demanding Attention
+Activate Window Demanding Attention=Ctrl+Alt+A\tMeta+B,Ctrl+Alt+A,Activate Window Demanding Attention
 Decrease Opacity=none,none,Decrease Opacity of Active Window by 5 %
 Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
 ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
@@ -179,7 +182,7 @@ Walk Through Windows of Current Application Alternative (Reverse)=none,none,Walk
 Window Above Other Windows=none,none,Keep Window Above Others
 Window Below Other Windows=none,none,Keep Window Below Others
 Window Close=Alt+F4\tMeta+X,Alt+F4,Close Window
-Window Fullscreen=Meta+F11,none,Make Window Fullscreen
+Window Fullscreen=Meta+F11\tCtrl+6,none,Make Window Fullscreen
 Window Grow Horizontal=none,none,Pack Grow Window Horizontally
 Window Grow Vertical=none,none,Pack Grow Window Vertically
 Window Lower=none,none,Lower Window
@@ -249,6 +252,39 @@ view_actual_size=Meta+0,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
+[lattedock]
+_k_friendly_name=Latte Dock
+activate task manager entry 1=,Meta+1,Activate Task Manager Entry 1
+activate task manager entry 10=,Meta+0,Activate Task Manager Entry 10
+activate task manager entry 2=,Meta+2,Activate Task Manager Entry 2
+activate task manager entry 3=,Meta+3,Activate Task Manager Entry 3
+activate task manager entry 4=,Meta+4,Activate Task Manager Entry 4
+activate task manager entry 5=,Meta+5,Activate Task Manager Entry 5
+activate task manager entry 6=,Meta+6,Activate Task Manager Entry 6
+activate task manager entry 7=,Meta+7,Activate Task Manager Entry 7
+activate task manager entry 8=,Meta+8,Activate Task Manager Entry 8
+activate task manager entry 9=,Meta+9,Activate Task Manager Entry 9
+activate widget 4=Meta+/,none,Activate Digital Clock Widget
+clear-history=none,none,Clear Clipboard History
+clipboard_action=,Ctrl+Alt+X,Enable Clipboard Actions
+cycleNextAction=none,none,Next History Item
+cyclePrevAction=none,none,Previous History Item
+edit_clipboard=none,none,Edit Contents...
+new instance for task manager entry 1=Meta+Ctrl+1,Meta+Ctrl+1,New Instance for Task Manager Entry 1
+new instance for task manager entry 10=Meta+Ctrl+0,Meta+Ctrl+0,New Instance for Task Manager Entry 10
+new instance for task manager entry 2=Meta+Ctrl+2,Meta+Ctrl+2,New Instance for Task Manager Entry 2
+new instance for task manager entry 3=Meta+Ctrl+3,Meta+Ctrl+3,New Instance for Task Manager Entry 3
+new instance for task manager entry 4=Meta+Ctrl+4,Meta+Ctrl+4,New Instance for Task Manager Entry 4
+new instance for task manager entry 5=Meta+Ctrl+5,Meta+Ctrl+5,New Instance for Task Manager Entry 5
+new instance for task manager entry 6=Meta+Ctrl+6,Meta+Ctrl+6,New Instance for Task Manager Entry 6
+new instance for task manager entry 7=Meta+Ctrl+7,Meta+Ctrl+7,New Instance for Task Manager Entry 7
+new instance for task manager entry 8=Meta+Ctrl+8,Meta+Ctrl+8,New Instance for Task Manager Entry 8
+new instance for task manager entry 9=Meta+Ctrl+9,Meta+Ctrl+9,New Instance for Task Manager Entry 9
+repeat_action=,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
+show latte dock=Meta+`,Meta+`,Show Latte Dock
+show-barcode=none,none,Show Barcode...
+show-on-mouse-pos=none,none,Open Klipper at Mouse Position
+
 [mediacontrol]
 _k_friendly_name=Media Controller
 nextmedia=Media Next,Media Next,Media playback next
@@ -268,6 +304,7 @@ activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
+activate widget 22=none,none,Activate Icons-only Task Manager Widget
 activate widget 4=Alt+F1,none,Activate Application Launcher Widget
 activate widget 48=none,none,Activate Icons-only Task Manager Widget
 activate widget 55=Meta+Z,none,Activate Application Launcher Widget
