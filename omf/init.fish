@@ -135,6 +135,14 @@ function trt
   tree -L 2 $argv
 end
 
+function gv
+  if count $argv > /dev/null
+    gwenview $argv
+  else
+    gwenview .
+  end
+end
+
 # Base16 Shell
 eval sh /home/sean/Documents/libraries/base16-shell/base16-tomorrow.dark.sh
 
