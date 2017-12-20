@@ -20,10 +20,10 @@ set -x TERM xterm-256color
 set fish_greeting ""
 
 # vim settings and aliases
-set -x EDITOR vim
+set -x EDITOR nvim
 
 function e
-  vim $argv
+  nvim $argv
 end
 
 # ls aliases
