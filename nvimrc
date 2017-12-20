@@ -55,6 +55,13 @@ set smartcase  " Non-case sensitive search
 set incsearch  " Incremental search
 set hlsearch   " Highlight search results
 
+" Line length
+set colorcolumn=80
+set textwidth=80
+
+" Enable highlighting of the current line
+set cursorline
+
 " Show matching brackets when text indicator is over them
 set showmatch 
 " How many tenths of a second to blink when matching brackets
@@ -131,6 +138,9 @@ set nobackup
 set nowb
 set noswapfile
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'tpope/vim-fugitive'
@@ -144,6 +154,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
 Plug 'dag/vim-fish'
 Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
 
 call plug#end()
 
