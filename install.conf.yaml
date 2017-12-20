@@ -1,6 +1,7 @@
 - link:
     ~/.vimrc: vimrc
     ~/.ideavimrc: ideavimrc
+    ~/.config/nvim/init.vim: nvimrc
     ~/.gitconfig: gitconfig
     ~/.gitconfig.local: gitconfig.local
     ~/.vim/bundle/Vundle.vim: 
