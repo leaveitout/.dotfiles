@@ -1,0 +1,12 @@
+[Unit]
+Description=tmux default session (detached)
+Documentation=man:tmux(1)
+
+[Service]
+Type=forking
+User=%I
+ExecStart=/usr/bin/tmux new-session -s persist -d
+ExecStop=/usr/bin/tmux kill-server -t persist
+
+[Install]
+WantedBy=multi-user.target
