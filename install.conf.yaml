@@ -1,29 +1,23 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+      force: true
+
 - link:
     ~/.vimrc: vimrc
     ~/.ideavimrc: ideavimrc
     ~/.config/nvim/init.vim: nvimrc
     ~/.gitconfig: gitconfig
     ~/.gitconfig.local: gitconfig.local
-    ~/.vim/bundle/Vundle.vim: 
-      create: true
-      path: Vundle.vim
-    ~/.config/kglobalshortcutsrc: 
-      force: true
-      path: kde/kglobalshortcutsrc
-    ~/.config/omf:
-      force: true
-      path: omf
-    ~/.vim/colors/Tomorrow-Night.vim:
-      create: true
-      path: Tomorrow-Night.vim
-    ~/.jupyter/custom/custom.css:
-      create: true
-      path: jupyter/custom/custom.css
-    ~/.jupyter/custom/custom.js:
-      create: true
-      path: jupyter/custom/custom.js
-    ~/.local/share/jupyter/nbextensions/vim_binding/vim_binding.css:
-      create: true
-      path: jupyter/custom/vim_binding.css
+    ~/.vim/bundle/Vundle.vim: Vundle.vim
+    ~/.config/kglobalshortcutsrc: kde/kglobalshortcutsrc
+    ~/.config/omf: omf
+    ~/.vim/colors/Tomorrow-Night.vim: Tomorrow-Night.vim
+    ~/.jupyter/custom/custom.css: jupyter/custom/custom.css
+    ~/.jupyter/custom/custom.js: jupyter/custom/custom.js
+    ~/.local/share/jupyter/nbextensions/vim_binding/vim_binding.css: jupyter/custom/vim_binding.css
+    ~/.tmux.conf: tmux.conf
+
 - shell:
-  - git submodule update --init --recursive # Installing submodules
+    - git submodule update --init --recursive # Installing submodules
