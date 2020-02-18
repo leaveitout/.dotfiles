@@ -59,7 +59,7 @@ function bbbbb
 end
 
 # tree aliases
-function tr
+function t
   tree $argv
 end
 
