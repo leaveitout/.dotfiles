@@ -18,6 +18,9 @@
     ~/.jupyter/custom/custom.js: jupyter/custom/custom.js
     ~/.local/share/jupyter/nbextensions/vim_binding/vim_binding.css: jupyter/custom/vim_binding.css
     ~/.tmux.conf: tmux.conf
+    ~/.config/Code\ -\ OSS/snippets: vscode/snippets
+    ~/.config/Code\ -\ OSS/keybindings.json: vscode/keybindings.json
+    ~/.config/Code\ -\ OSS/settings.json: vscode/settings.json
 
 - shell:
     - git submodule update --init --recursive # Installing submodules

@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Tomorrow Night",
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 17,
+    "editor.fontFamily": "'Hack'",
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "window.menuBarVisibility": "toggle"
+}
