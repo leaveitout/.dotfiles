@@ -160,7 +160,7 @@ Plugin 'heavenshell/vim-pydocstring'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'lervag/vimtex'
 Plugin 'dag/vim-fish'
-Plugin 'Shougu/unite.vim'
+" Plugin 'Shougu/unite.vim'
 Plugin 'rafaqz/citation.vim'
 
 " All Plugins must be added before the following line

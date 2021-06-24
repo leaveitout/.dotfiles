@@ -14,7 +14,7 @@ if not set -q LS_COLORS
 end
 
 # Force 256 colors
-set -x TERM xterm-256color
+# set -x TERM xterm-256color
 
 # No greeting
 set fish_greeting ""
@@ -59,7 +59,7 @@ function bbbbb
 end
 
 # tree aliases
-function tr
+function t
   tree $argv
 end
 
@@ -144,7 +144,7 @@ function gv
 end
 
 # Base16 Shell
-eval sh /home/sean/Documents/libraries/base16-shell/base16-tomorrow.dark.sh
+# eval sh /home/sean/Documents/libraries/base16-shell/base16-tomorrow.dark.sh
 
 # Colored man pages
 set -x LESS_TERMCAP_mb (printf "\033[01;31m")  
